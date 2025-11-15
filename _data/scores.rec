@@ -1,0 +1,79 @@
+%rec: Score
+# Scores are attached to files.
+%key: File
+%mandatory: Composer Language Title
+%sort: Title
+
+File: adeste-fideles.pdf
+Title: Adeste fideles
+Composer: Anonymous
+Language: la
+Season: Christmas
+Tag: sacred
+
+File: anima-christi.pdf
+Title: Anima Christi
+Composer: Marco Frisina
+Language: la
+Tag: sacred
+
+File: ave-maris-stella.pdf
+Title: Ave maris stella
+Composer: Anonymous
+Language: la
+Tag: sacred
+
+File: the-first-noël.pdf
+Title: First Noël, The
+Composer: Anonymous
+Arranger: John Stainer
+Language: en
+Season: Christmas
+
+File: let-all-mortal-flesh-keep-silence.picardy.pdf
+Title: Let all mortal flesh keep silence (Picardy)
+Composer: Anonymous
+Language: en
+Season: Advent
+Tag: sacred
+Tag: satb
+
+File: let-all-mortal-flesh-keep-silence.bairstow.pdf
+Title: Let all mortal flesh keep silence (Bairstow)
+Composer: Edward Cuthbert Bairstow
+Language: en
+Season: Advent
+Tag: sacred
+Tag: satb
+
+File: lo-how-a-rose-eer-blooming.pdf
+Title: Lo, how a rose e’er blooming
+Composer: Michael Praetorius
+Language: en
+Season: Advent
+Tag: sacred
+Tag: satb
+
+File: sicut-cervus.pdf
+Title: Sicut cervus
+Composer: Giovanni PierLuigi da Palestrina
+Language: la
+Tag: sacred
+Tag: satb
+
+File: silent-night-holy-night.pdf
+Title: Silent night, holy night
+Composer: Franz Xaver Gruber
+Language: en
+Season: Christmas
+Tag: sacred
+Tag: satb
+
+File: veni-veni-emmanuel.pdf
+Title: Veni, veni Emmanuel
+Composer: Anonymous
+Language: la
+Season: Advent
+Tag: sacred
+
+# End of scores.rec
