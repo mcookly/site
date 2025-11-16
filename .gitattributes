@@ -1,0 +1,4 @@
+# -*- mode: conf -*-
+
+# Lots of PDFs can slow git down.
+*.pdf binary
