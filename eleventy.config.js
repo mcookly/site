@@ -1,8 +1,6 @@
 import { parse } from "csv-parse/sync";
 
 export default async function (eleventyConfig) {
-    eleventyConfig.setMarkdownTemplateEngine = "njk";
-
     // Files for the user are available in `public`.
     eleventyConfig.addPassthroughCopy("public");
 
@@ -16,3 +14,13 @@ export default async function (eleventyConfig) {
         return scores;
     });
 }
+
+export const config = {
+    dir: {
+        input: "content",
+        includes: "../_includes", // relative to `input`
+        data: "../_data", // relative to `input`
+        output: "_site",
+    },
+    markdownTemplateEngine: "njk",
+};

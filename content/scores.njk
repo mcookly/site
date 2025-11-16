@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Scores
+---
+
+<p>
+  Scores are from either the
+  <a href="https://cpdl.org/wiki/">Choral Public Domain Wiki</a> or my own
+  efforts. My own scores are accessible under the
+  <a href="https://cpdl.org/wiki/index.php/ChoralWiki:CPDL">CPDL</a>
+  license (although I have not yet made this explicit in each score).
+</p>
+<ul>
+  {%- for score in scores %}
+  <li>
+    <a href="/public/scores/{{ score.File }}">{{ score.Title }}</a>
+  </li>
+  {%- endfor %}
+</ul>
