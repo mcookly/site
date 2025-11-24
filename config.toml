@@ -1,0 +1,12 @@
+base_url = "https://maximiliancook.com"
+title = "Maximilian Cook"
+compile_sass = false
+ignored_content = ["*.rec"]
+build_search_index = false
+# I have PDFs.
+hard_link_static = true
+author = "Maximilian Cook"
+
+[markdown]
+highlight_code = true
+smart_punctuation = true

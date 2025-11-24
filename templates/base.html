@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+    <title>
+      {%- if page.title -%}
+        {%- for name in config.title | split(pat=' ') -%}
+          {{ name | truncate(length=1, end='') }}
+        {%- endfor -%}
+        {{ ' | ' ~ page.title }}
+      {%- else -%}
+        {{ config.title }}
+      {%- endif -%}
+    </title>
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        {%- block content -%}
+        {%- endblock content -%}
+      </div>
+    </section>
+  </body>
+</html>

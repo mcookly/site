@@ -1,0 +1,22 @@
+{% extends 'page.html' %}
+
+{%- block content %}
+{{ page.content | safe }}
+
+{%- set data = load_data(path=page.path ~ 'scores.csv') -%}
+
+{# Headers are stored separately, so the index of `File` and `Title` are needed. #}
+{%- for header in data.headers -%}
+  {%- if header == 'File' -%}
+    {%- set_global i_file = loop.index0 -%}
+  {%- elif header == 'Title' -%}
+    {%- set_global i_title = loop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<ul>
+{%- for score in data.records %}
+  <li><a href="scores/doc/{{ score[i_file] }}">{{ score[i_title] }}</a></li>
+{%- endfor %}
+</ul>
+{% endblock content -%}
