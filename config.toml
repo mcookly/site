@@ -8,5 +8,4 @@ hard_link_static = true
 author = "Maximilian Cook"
 
 [markdown]
-highlight_code = true
 smart_punctuation = true
